@@ -1,4 +1,5 @@
-﻿using NordFlow.Services;
+﻿using System.Collections.ObjectModel;
+using NordFlow.Services;
 using System.Text;
 using System.Windows;
 using System.Collections.Generic;
@@ -20,18 +21,20 @@ namespace NordFlow;
 public partial class MainWindow : Window
 {
     private CustomerService _customerService = new CustomerService();
-    private List<Customer> _customers;
+    private ObservableCollection<Customer> _customers;
     public MainWindow()
     {
         InitializeComponent();
-        _customers = _customerService.GetCustomers();
+        _customers = new ObservableCollection<Customer>(_customerService.GetCustomers());
         CustomerListBox.ItemsSource = _customers;
-    }
+    }   
     
     /// Button
     public void MyButton_Click(object sender, RoutedEventArgs e)
     {
-        WelcomeText.Text = NameInput.Text;
+        var newCustomer = new Customer { Name = NameInput.Text };
+        _customers.Add(newCustomer);
+        
     }
     
     
