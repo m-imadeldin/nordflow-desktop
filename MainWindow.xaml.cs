@@ -37,10 +37,18 @@ public partial class MainWindow : Window
         var newCustomer = new Customer { Name = NameInput.Text };
         _customers.Add(newCustomer);
         NameInput.Text = "";
+
+
         
         
     }
     
-    
+            public void DeleteButton_Click(object sender, RoutedEventArgs e)
+            {
+                var selected = CustomerListBox.SelectedItem as Customer;
+                if (selected == null) return;
+
+                _customers.Remove(selected);
+            }
     
 }
