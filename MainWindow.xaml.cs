@@ -1,7 +1,7 @@
 ﻿using NordFlow.Services;
-
 using System.Text;
 using System.Windows;
+using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NordFlow.Models;
 
 namespace NordFlow;
 
@@ -18,21 +19,19 @@ namespace NordFlow;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private CustomerService _customerService = new CustomerService();
+    private List<Customer> _customers;
     public MainWindow()
     {
         InitializeComponent();
+        _customers = _customerService.GetCustomers();
+        CustomerListBox.ItemsSource = _customers;
     }
     
     /// Button
     public void MyButton_Click(object sender, RoutedEventArgs e)
     {
-        var customerService = new CustomerService();
-        var customers = customerService.GetCustomers();
-
-        WelcomeText.Text = customers[0].Name + " - " + customers[0].Email;
-        CustomerListBox.ItemsSource = customers;
-        
-
+        WelcomeText.Text = NameInput.Text;
     }
     
     

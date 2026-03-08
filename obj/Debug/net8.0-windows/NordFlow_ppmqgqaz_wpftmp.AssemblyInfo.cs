@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NordFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf36ade8851422c2de35f74688260aee13e642e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+465255352f8d2c20328e9a79b1dc1616d87b1dd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NordFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NordFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
