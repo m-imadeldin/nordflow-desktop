@@ -32,9 +32,12 @@ public partial class MainWindow : Window
     /// Button
     public void MyButton_Click(object sender, RoutedEventArgs e)
     {
+        if (string.IsNullOrWhiteSpace(NameInput.Text)) return; 
+        
         var newCustomer = new Customer { Name = NameInput.Text };
         _customers.Add(newCustomer);
         NameInput.Text = "";
+        
         
     }
     
