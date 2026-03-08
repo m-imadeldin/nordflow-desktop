@@ -34,6 +34,7 @@ public partial class MainWindow : Window
     {
         var newCustomer = new Customer { Name = NameInput.Text };
         _customers.Add(newCustomer);
+        NameInput.Text = "";
         
     }
     
