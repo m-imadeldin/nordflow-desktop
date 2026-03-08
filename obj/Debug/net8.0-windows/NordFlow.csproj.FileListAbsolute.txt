@@ -18,3 +18,4 @@ C:\Users\Mohammed\RiderProjects\exupgift3\NordFlow\NordFlow\obj\Debug\net8.0-win
 C:\Users\Mohammed\RiderProjects\exupgift3\NordFlow\NordFlow\obj\Debug\net8.0-windows\NordFlow.pdb
 C:\Users\Mohammed\RiderProjects\exupgift3\NordFlow\NordFlow\obj\Debug\net8.0-windows\NordFlow.genruntimeconfig.cache
 C:\Users\Mohammed\RiderProjects\exupgift3\NordFlow\NordFlow\obj\Debug\net8.0-windows\ref\NordFlow.dll
+C:\Users\Mohammed\RiderProjects\exupgift3\NordFlow\NordFlow\obj\Debug\net8.0-windows\NordFlow.sourcelink.json

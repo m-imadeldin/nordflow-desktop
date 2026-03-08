@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using NordFlow.Services;
+
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -22,10 +24,15 @@ public partial class MainWindow : Window
     }
     
     /// Button
-    public void MyButton_Click(object sender, RoutedEventArgs e)  
+    public void MyButton_Click(object sender, RoutedEventArgs e)
     {
-        WelcomeText.Text = "Du klickade på knappen!";
-        MessageBox.Show("Knappen fungerar!");    
+        var customerService = new CustomerService();
+        var customers = customerService.GetCustomers();
+
+        WelcomeText.Text = customers[0].Name + " - " + customers[0].Email;
+        CustomerListBox.ItemsSource = customers;
+        
+
     }
     
     

@@ -19,6 +19,13 @@
                 Height="35" 
                 Click="MyButton_Click" />
         
+        <ListBox x:Name="CustomerListBox"
+                 Width="250"
+                 Height="120"
+                 Margin="0,20,0,0"
+                 DisplayMemberPath="Name" />
+         
+        
         
         </StackPanel>
                    
