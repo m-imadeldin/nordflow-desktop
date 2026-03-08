@@ -31,7 +31,7 @@
                  Margin="0,10,0,10" />
          
         <Button Content="Ta bort" Click="DeleteButton_Click" />
-        
+        <Button Content="Redigera" Click="EditButton_Click" />
         
         </StackPanel>
                    
