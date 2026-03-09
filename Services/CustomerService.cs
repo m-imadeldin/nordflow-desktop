@@ -13,4 +13,6 @@ public class CustomerService
             new Customer { Id = 3, Name = "Sara Ali", Email = "sara@gmail.com" }
         };
     }
+
+    public IEnumerable<Customer> Customers { get; set; }
 }
