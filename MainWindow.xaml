@@ -21,7 +21,7 @@
             <TextBlock Text="CUSTOMERS" 
                        FontWeight="Bold" 
                        FontSize="20" 
-                       HorizontalAlignment="Center"
+                       HorizontalAlignment="Left"
                        Margin="0,0,0,20"/>
             
             <!-- Customer Name Input -->
@@ -30,7 +30,7 @@
                      Height="35"
                      Margin="0,0,0,15"
                      FontSize="14"
-                     HorizontalAlignment="Center"/>
+                     HorizontalAlignment="Left"/>
             
             <!-- Main Action Button (Add/Edit) -->
             <Button Content="ADD CUSTOMER / UPDATE" 
@@ -38,7 +38,7 @@
                     Height="40"
                     Click="MyButton_Click"
                     FontSize="14"
-                    HorizontalAlignment="Center"
+                    HorizontalAlignment="Left"
                     Margin="0,0,0,15"/>
             
             <!-- Customer List -->
@@ -71,7 +71,7 @@
             <TextBlock Text="INVOICES" 
                        FontWeight="Bold" 
                        FontSize="20" 
-                       HorizontalAlignment="Center"
+                       HorizontalAlignment="Left"
                        Margin="0,0,0,15"/>
             
             <!-- Invoice List -->
@@ -134,6 +134,59 @@
                         Height="40"/>
             </StackPanel>
         </StackPanel>
+        
+        
+                <!-- ========================================
+             PRODUCT SECTION - Middle section for product management
+             ======================================== -->
+        <StackPanel Margin="400,20,20,170" VerticalAlignment="Top">
+            <!-- Section Header -->
+            <TextBlock Text="PRODUCTS"
+                       FontWeight="Bold"
+                       FontSize="20"
+                       HorizontalAlignment="Right"
+                       Margin="0,0,0,20"/>
+
+            <!-- Product Name Input -->
+            <TextBox x:Name="ProductNameInput"
+                     Width="200"
+                     Height="35"
+                     Margin="0,0,0,10"
+                     FontSize="14"
+                     HorizontalAlignment="Right"/>
+
+            <!-- Product Price Input -->
+            <TextBox x:Name="ProductPriceInput"
+                     Width="200"
+                     Height="35"
+                     Margin="0,0,0,10"
+                     FontSize="14"
+                     HorizontalAlignment="Right"/>
+
+            <!-- Product Stock Input -->
+            <TextBox x:Name="ProductStockInput"
+                     Width="200"
+                     Height="35"
+                     Margin="0,0,0,15"
+                     FontSize="14"
+                     HorizontalAlignment="Right"/>
+
+            <!-- Product Action Button -->
+            <Button Content="ADD PRODUCT"
+                    Width="160"
+                    Height="40"
+                    Click="AddProduct_Click"
+                    FontSize="14"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,0,15"/>
+
+            <!-- Product List -->
+            <ListBox x:Name="ProductListBox"
+                     Width="280"
+                     Height="140"
+                     HorizontalAlignment="Right"/>
+        </StackPanel>
+
         
     </Grid>
 </Window>

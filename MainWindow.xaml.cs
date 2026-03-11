@@ -51,6 +51,7 @@ public partial class MainWindow : Window
         // Bind lists to ListBoxes
         CustomerListBox.ItemsSource = _customers;
         InvoiceListBox.ItemsSource = _invoiceService.Invoices;
+        ProductListBox.ItemsSource = _products;
 
         // Load initial data
         LoadCustomers();
@@ -213,5 +214,45 @@ public partial class MainWindow : Window
 
         _invoiceService.RemoveInvoice(_selectedInvoice);
         LoadInvoices();
+    }
+    
+    // ========================================
+    // ADD PRODUCT - Create a new product and add it to the list
+    // ========================================
+
+    private void AddProduct_Click(object sender, RoutedEventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(ProductNameInput.Text))
+        {
+            MessageBox.Show("Enter a product name first");
+            return;
+        }
+
+        if (!decimal.TryParse(ProductPriceInput.Text, out decimal price) || price < 0)
+        {
+            MessageBox.Show("Enter a valid price!");
+            return;
+        }
+
+
+        if (!int.TryParse(ProductStockInput.Text, out int stock) || stock < 0)
+        {
+            MessageBox.Show("Enter a valid stock quantity!");
+            return;
+        }
+
+        var product = new Product
+        {
+            Name = ProductNameInput.Text,
+            Price = price,
+            StockQuantity = stock
+        };
+
+        _productService.AddProduct(product);
+        LoadProducts();
+
+        ProductNameInput.Clear();
+        ProductPriceInput.Clear();
+        ProductStockInput.Clear();
     }
 }
