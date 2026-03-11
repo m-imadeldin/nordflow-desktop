@@ -722,6 +722,15 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
+      "Pester/3.4.6": {
+        "type": "package"
+      },
+      "PesterForPackageManagerConsole/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Pester": "3.4.6"
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
         "type": "package",
         "dependencies": {
@@ -2655,6 +2664,126 @@
         "readme.md"
       ]
     },
+    "Pester/3.4.6": {
+      "sha512": "7EqWn3OOWiKlJwWu5pKWx8sizOfcAKxwHJxZT8cRTSCZ+DLiYoV1PB65ju8M5DTRK8++1PNZ/cYMqeV6UmqPbA==",
+      "type": "package",
+      "path": "pester/3.4.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "chocolateyInstall.ps1",
+        "pester.3.4.6.nupkg.sha512",
+        "pester.nuspec",
+        "tools/Examples/Calculator/Add-Numbers.Tests.ps1",
+        "tools/Examples/Calculator/Add-Numbers.ps1",
+        "tools/Examples/Validator/Validator.Tests.ps1",
+        "tools/Functions/Assertions/Be.Tests.ps1",
+        "tools/Functions/Assertions/Be.ps1",
+        "tools/Functions/Assertions/BeGreaterThan.Tests.ps1",
+        "tools/Functions/Assertions/BeGreaterThan.ps1",
+        "tools/Functions/Assertions/BeIn.Tests.ps1",
+        "tools/Functions/Assertions/BeIn.ps1",
+        "tools/Functions/Assertions/BeLessThan.Tests.ps1",
+        "tools/Functions/Assertions/BeLessThan.ps1",
+        "tools/Functions/Assertions/BeLike.Tests.ps1",
+        "tools/Functions/Assertions/BeLike.ps1",
+        "tools/Functions/Assertions/BeLikeExactly.Tests.ps1",
+        "tools/Functions/Assertions/BeLikeExactly.ps1",
+        "tools/Functions/Assertions/BeNullOrEmpty.Tests.ps1",
+        "tools/Functions/Assertions/BeNullOrEmpty.ps1",
+        "tools/Functions/Assertions/BeOfType.Tests.ps1",
+        "tools/Functions/Assertions/BeOfType.ps1",
+        "tools/Functions/Assertions/Contain.Tests.ps1",
+        "tools/Functions/Assertions/Contain.ps1",
+        "tools/Functions/Assertions/ContainExactly.Tests.ps1",
+        "tools/Functions/Assertions/ContainExactly.ps1",
+        "tools/Functions/Assertions/Exist.Tests.ps1",
+        "tools/Functions/Assertions/Exist.ps1",
+        "tools/Functions/Assertions/Match.Tests.ps1",
+        "tools/Functions/Assertions/Match.ps1",
+        "tools/Functions/Assertions/MatchExactly.Tests.ps1",
+        "tools/Functions/Assertions/MatchExactly.ps1",
+        "tools/Functions/Assertions/PesterThrow.Tests.ps1",
+        "tools/Functions/Assertions/PesterThrow.ps1",
+        "tools/Functions/Assertions/Set-TestInconclusive.ps1",
+        "tools/Functions/Assertions/Should.Tests.ps1",
+        "tools/Functions/Assertions/Should.ps1",
+        "tools/Functions/Assertions/Test-Assertion.ps1",
+        "tools/Functions/BreakAndContinue.Tests.ps1",
+        "tools/Functions/Context.Tests.ps1",
+        "tools/Functions/Context.ps1",
+        "tools/Functions/Coverage.Tests.ps1",
+        "tools/Functions/Coverage.ps1",
+        "tools/Functions/Describe.Tests.ps1",
+        "tools/Functions/Describe.ps1",
+        "tools/Functions/GlobalMock-A.Tests.ps1",
+        "tools/Functions/GlobalMock-B.Tests.ps1",
+        "tools/Functions/In.Tests.ps1",
+        "tools/Functions/In.ps1",
+        "tools/Functions/InModuleScope.Tests.ps1",
+        "tools/Functions/InModuleScope.ps1",
+        "tools/Functions/It.Tests.ps1",
+        "tools/Functions/It.ps1",
+        "tools/Functions/Mock.Tests.ps1",
+        "tools/Functions/Mock.ps1",
+        "tools/Functions/New-Fixture.Tests.ps1",
+        "tools/Functions/New-Fixture.ps1",
+        "tools/Functions/New-MockObject.Tests.ps1",
+        "tools/Functions/New-MockObject.ps1",
+        "tools/Functions/Output.Tests.ps1",
+        "tools/Functions/PesterState.Tests.ps1",
+        "tools/Functions/PesterState.ps1",
+        "tools/Functions/SetupTeardown.Tests.ps1",
+        "tools/Functions/SetupTeardown.ps1",
+        "tools/Functions/TestDrive.Tests.ps1",
+        "tools/Functions/TestDrive.ps1",
+        "tools/Functions/TestResults.Tests.ps1",
+        "tools/Functions/TestResults.ps1",
+        "tools/Functions/TestsRunningInCleanRunspace.Tests.ps1",
+        "tools/LICENSE",
+        "tools/Pester.Tests.ps1",
+        "tools/Pester.psd1",
+        "tools/Pester.psm1",
+        "tools/Snippets/Context.snippets.ps1xml",
+        "tools/Snippets/Describe.snippets.ps1xml",
+        "tools/Snippets/It.snippets.ps1xml",
+        "tools/Snippets/ShouldBe.snippets.ps1xml",
+        "tools/Snippets/ShouldBeGreaterThan.snippets.ps1xml",
+        "tools/Snippets/ShouldBeLessThan.snippets.ps1xml",
+        "tools/Snippets/ShouldBeNullOrEmpty.snippets.ps1xml",
+        "tools/Snippets/ShouldContain.snippets.ps1xml",
+        "tools/Snippets/ShouldExist.snippets.ps1xml",
+        "tools/Snippets/ShouldMatch.snippets.ps1xml",
+        "tools/Snippets/ShouldNotBe.snippets.ps1xml",
+        "tools/Snippets/ShouldNotBeNullOrEmpty.snippets.ps1xml",
+        "tools/Snippets/ShouldNotContain.snippets.ps1xml",
+        "tools/Snippets/ShouldNotExist.snippets.ps1xml",
+        "tools/Snippets/ShouldNotMatch.snippets.ps1xml",
+        "tools/Snippets/ShouldNotThrow.snippets.ps1xml",
+        "tools/Snippets/ShouldThrow.snippets.ps1xml",
+        "tools/bin/pester.bat",
+        "tools/en-US/about_BeforeEach_AfterEach.help.txt",
+        "tools/en-US/about_Mocking.help.txt",
+        "tools/en-US/about_Pester.help.txt",
+        "tools/en-US/about_Should.help.txt",
+        "tools/en-US/about_TestDrive.help.txt",
+        "tools/nunit_schema_2.5.xsd"
+      ]
+    },
+    "PesterForPackageManagerConsole/1.0.0": {
+      "sha512": "6ZBexIZeEFNiimc1oyGXae7vCsDfhJv/Sp9PmQzUUEy19zIkR3U6l4AAE1v1LlVy9JTmmTT8v5frJmpa0gEWQw==",
+      "type": "package",
+      "path": "pesterforpackagemanagerconsole/1.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "pesterforpackagemanagerconsole.1.0.0.nupkg.sha512",
+        "pesterforpackagemanagerconsole.nuspec",
+        "tools/init.ps1"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "sha512": "UxWuisvZ3uVcVOLJQv7urM/JiQH+v3TmaJc1BLKl5Dxfm/nTzTUrqswCqg/INiYLi61AXnHo1M1JPmPqqLnAdg==",
       "type": "package",
@@ -3226,7 +3355,8 @@
     "net8.0-windows7.0": [
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "PesterForPackageManagerConsole >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3287,6 +3417,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "PesterForPackageManagerConsole": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

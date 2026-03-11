@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.0"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
+          "PesterForPackageManagerConsole": "1.0.0"
         },
         "runtime": {
           "NordFlow.dll": {}
@@ -550,6 +551,12 @@
           }
         }
       },
+      "Pester/3.4.6": {},
+      "PesterForPackageManagerConsole/1.0.0": {
+        "dependencies": {
+          "Pester": "3.4.6"
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.10",
@@ -1024,6 +1031,20 @@
       "sha512": "sha512-YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==",
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
+    },
+    "Pester/3.4.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7EqWn3OOWiKlJwWu5pKWx8sizOfcAKxwHJxZT8cRTSCZ+DLiYoV1PB65ju8M5DTRK8++1PNZ/cYMqeV6UmqPbA==",
+      "path": "pester/3.4.6",
+      "hashPath": "pester.3.4.6.nupkg.sha512"
+    },
+    "PesterForPackageManagerConsole/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6ZBexIZeEFNiimc1oyGXae7vCsDfhJv/Sp9PmQzUUEy19zIkR3U6l4AAE1v1LlVy9JTmmTT8v5frJmpa0gEWQw==",
+      "path": "pesterforpackagemanagerconsole/1.0.0",
+      "hashPath": "pesterforpackagemanagerconsole.1.0.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "type": "package",

@@ -1,8 +1,13 @@
-namespace NordFlow.Models;
-
-public class Customer
+// ========================================
+// CUSTOMER MODEL - Simple POCO för UI
+// ========================================
+namespace NordFlow.Models
 {
-    public int Id { get; set; }           // Primary Key (auto-generated)
-    public string Name { get; set; } = ""; // Customer name
-    public string Email { get; set; } = ""; // Customer email (optional)
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        
+        public override string ToString() => Name;  // För ListBox display
+    }
 }

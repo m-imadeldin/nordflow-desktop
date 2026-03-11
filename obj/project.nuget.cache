@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ojEh7bB24iI=",
+  "dgSpecHash": "dLnJVs2qP3M=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mohammed\\RiderProjects\\exupgift3\\NordFlow\\NordFlow\\NordFlow.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,8 @@
     "C:\\Users\\Mohammed\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mohammed\\.nuget\\packages\\pester\\3.4.6\\pester.3.4.6.nupkg.sha512",
+    "C:\\Users\\Mohammed\\.nuget\\packages\\pesterforpackagemanagerconsole\\1.0.0\\pesterforpackagemanagerconsole.1.0.0.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
     "C:\\Users\\Mohammed\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",

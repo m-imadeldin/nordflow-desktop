@@ -1,18 +1,24 @@
+// ========================================
+// CUSTOMER SERVICE - In-memory (ingen DB än)
+// ========================================
 using NordFlow.Models;
+using System.Collections.ObjectModel;
 
-namespace NordFlow.Services;
-
-public class CustomerService
+namespace NordFlow.Services
 {
-    public List<Customer> GetCustomers()
+    public class CustomerService
     {
-        return new List<Customer>
-        {
-            new Customer { Id = 1, Name = "Anna Svensson", Email = "anna@gmail.com" },
-            new Customer { Id = 2, Name = "Erik Johansson", Email = "erik@gmail.com" },
-            new Customer { Id = 3, Name = "Sara Ali", Email = "sara@gmail.com" }
-        };
-    }
+        public ObservableCollection<Customer> Customers { get; } = new();
 
-    public IEnumerable<Customer> Customers { get; set; }
+        public void AddCustomer(Customer customer)
+        {
+            customer.Id = Customers.Count + 1;
+            Customers.Add(customer);
+        }
+
+        public void RemoveCustomer(Customer customer)
+        {
+            Customers.Remove(customer);
+        }
+    }
 }
